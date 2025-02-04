@@ -9,26 +9,28 @@
     <script src="./js/scrip.js" defer></script>
   </head>
   <body>
-    <main>
-      <div>
-      </div>
-      <div>
-        <section>
+    <main id="mainContainer">
+      <div class="img-container"></div>
+
+      <div class="container">
+        <section class="features">
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <ul>
-            <li>Product discovery and building what matters</li>
-            <li>Measuring to ensure updates are a success</li>
-            <li>And much more!</li>
+            <li><span><img src="./assets/images/icon-list.svg" alt=""></span>Product discovery and building what matters</li>
+            <li><span><img src="./assets/images/icon-list.svg" alt=""></span>Measuring to ensure updates are a success</li>
+            <li><span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!</li>
           </ul>
         </section>
-        <form>
-            <label for="email">Email address:</label>
-            <input type="email" id="email" name="email" placeholder="email@company.com" required>
+        <form id="form" novalidate>
+          <div>
+            <label for="email">Email address</label>
             <span id="email-validation-message" class="validation-message"></span>
+          </div>
+            <input type="email" id="email" name="email" placeholder="email@company.com" required>
+            <button id="button" disabled>Subscribe to  monthly newsletter</button>
           </form>
       </div>
-      <div></div>
     </main>
   </body>
 </html>
