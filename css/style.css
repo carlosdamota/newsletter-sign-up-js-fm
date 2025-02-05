@@ -1,4 +1,9 @@
-
+:root{
+	--text-color: hsl(234, 29%, 20%);
+	--bg-color: hsl(235, 18%, 26%);
+	--success-color: #32CD32;
+	--deny-color: tomato;
+}
 
 body {
   display: flex;
@@ -108,7 +113,27 @@ form {
     justify-content: space-between;
   }
   & input {
-    border: 1px solid rgba(0, 0, 0, 0.253);
+    border: 1px solid gray;
+    &:focus{
+      background-color: white;
+      border: 1px solid gray;
+    }
+    &.valid{
+      background-color: color-mix(in srgb,  var(--success-color) 25%, transparent);
+    
+    &:focus{
+      background-color: color-mix(in srgb,  var(--success-color) 25%, transparent);
+      
+      border-color: var(--success-color);
+    }
+    }
+    &.invalid{
+      background-color: color-mix(in srgb,  var(--deny-color) 25%, transparent);
+    &:focus{
+      background-color: color-mix(in srgb,  var(--deny-color) 25%, transparent);
+      border-color: var(--deny-color);
+    }
+  }
   }
   & span{
     margin-right: 1em;
@@ -125,6 +150,10 @@ form {
     font-weight: 700;
     border: none;
     background-color: var(--text-color);
+    transition: background-color 0.5s ease-in-out;
+    &:hover{
+      background:  linear-gradient(to right, var(--deny-color),  var(--success-color));
+    }
   }
 }
 
@@ -162,10 +191,14 @@ form {
     border: none;
     border-radius: 0.5em;
     margin: 1em 0;
+    transition: background 0.5s ease-in-out;
+    &:hover{
+      background:  linear-gradient(to right, var(--deny-color),  var(--success-color));
+    }
   }
   @media (max-width: 430px) {
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     border-radius: 0;
     justify-content: center;
     & img {

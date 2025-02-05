@@ -6,7 +6,7 @@
     <title>Newsletter sign-up</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/scrip.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <main id="mainContainer">
@@ -17,15 +17,15 @@
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <ul>
-            <li><span><img src="./assets/images/icon-list.svg" alt=""></span>Product discovery and building what matters</li>
-            <li><span><img src="./assets/images/icon-list.svg" alt=""></span>Measuring to ensure updates are a success</li>
-            <li><span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!</li>
+            <li><span><img src="./assets/images/icon-list.svg" alt="validate"></span>Product discovery and building what matters</li>
+            <li><span><img src="./assets/images/icon-list.svg" alt="validate"></span>Measuring to ensure updates are a success</li>
+            <li><span><img src="./assets/images/icon-list.svg" alt="validate"></span>And much more!</li>
           </ul>
         </section>
-        <form id="form" novalidate>
+        <form id="form" novalidate autocomplete="off">
           <div>
             <label for="email">Email address</label>
-            <span id="email-validation-message" class="validation-message"></span>
+            <span id="email-validation-message" class="validation-message" role="alert"></span>
           </div>
             <input type="email" id="email" name="email" placeholder="email@company.com" required>
             <button id="button" disabled>Subscribe to  monthly newsletter</button>
