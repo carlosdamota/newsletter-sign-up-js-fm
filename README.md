@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- **Solution URL:** [Frontend Mentor solution](https://your-solution-url.com)
+- **Solution URL:** [Frontend Mentor solution](https://www.frontendmentor.io/solutions/responsive-newsletter-with-authentication-using-javascript-and-native-ruLl3P76FG)
 - **Live Site URL:** [GitHub Pages](https://carlosdamota.github.io/newsletter-sign-up-js-fm/)
 
 ## My process
